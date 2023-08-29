@@ -15,11 +15,8 @@ async function migrationsRun() {
             await db.exec(shemas)
 
         }catch(error){
-
             console.error(`O correu um error: ${error.message}`);
-
         }
-            
 }
 
 module.exports = migrationsRun;
